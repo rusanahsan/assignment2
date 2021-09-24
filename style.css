@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:url(./pexels-artem-beliaikin-2305005.jpg) no-repeat fixed;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+}
+.container{
+    display:inline-block;
+    width:25rem;
+    height:30rem;
+    background:white;
+    margin:8% auto;
+    border-radius:5px;
+    position:relative;
+    overflow: hidden;
+}
+h3{
+    font-size: xx-large;
+    text-align:center;
+    margin-bottom:3rem;
+    color:royalblue;
+}
+.container form{
+    color:royalblue;
+    width:18rem;
+    position:absolute;
+    top:7rem;
+    left: 45px;
+    transition: 0.5s;
+}
+form input,select{
+    width:100%;
+    padding:10px 5px;
+    margin:5px 0;
+    border:0;
+    border-bottom:1px solid grey;
+    outline:none;
+    background:transparent;
+}
+.btn-box{
+    width:100%;
+    margin:2rem auto;
+    text-align: center;
+}
+form button{
+    width:7rem;
+    height:2.1rem;
+    margin:0 10 px;
+    background:linear-gradient(to right, #ff0000 0%, #ff6600 100%);
+    border-radius:2rem;
+    border:0;
+    outline:none;
+    color:whitesmoke;
+    cursor:pointer;
+}
+#form2{
+    left:450px;
+}
+#form3{
+    left:450px;
+}
+#form4{
+    left:450px;
+}
+.steps{
+    width:25rem;
+    height:3rem;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    box-shadow:0 -1px 5px -1px black;
+    position:relative;
+    transition: 1s;
+}
+.step-num{
+    width:6.25rem;
+    text-align: center;
+    color:#333;
+    font-size: larger;
+    font-weight: bold;
+    position:relative;
+}
+#backcol{
+    position:absolute;
+    height:100%;
+    width:6.25rem;
+    background:linear-gradient(to right, #ff0000 0%, #ff6600 100%);
+}
+#backcol::after{
+    content:'';
+    height:0;
+    width:0;
+    border-top: 1.5rem solid transparent;
+    border-bottom:1.5rem solid transparent;
+    position:absolute;
+    right:-1.5rem;
+    top:0;
+    border-left:1.5rem solid #ff6600;
+}
+::placeholder{
+    color:dimgrey;
+}
+h1{
+    color:red;
+    margin-left:3rem;
+    margin-top:5rem;
+}

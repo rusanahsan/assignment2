@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-step Form</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div class="container" id="cont">
+        <form id="form1">
+            <h3>Personal Details</h3>
+            <input id="inp1" type="text" placeholder="Name" required>
+            <input id="inp2" type="date" placeholder="DOB" required>
+            <select id="inp3" name="gender" id="gen" size="1" required>
+                <option value="">Choose a gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select>
+            <div class="btn-box">
+                <button type="button" id="next1">Next</button>
+            </div>
+        </form>
+        <form id="form2">
+            <h3>Address Info</h3>
+            <input id="inp4" type="text" placeholder="Present Address" required>
+            <input id="inp5" type="text" placeholder="Permanent Address" required>
+            <div class="btn-box">
+                <button type="button" id="back1">Back</button>
+                <button type="button" id="next2">Next</button>
+            </div>
+        </form>
+        <form id="form3">
+            <h3>Academic Details</h3>
+            <input id="inp6" type="text" placeholder="College Name" required>
+            <input id="inp7" type="text" placeholder="College Roll" required>
+            <input id="inp8" type="number" min="0" max="10" step="0.1" placeholder="Current CGPA" required>
+            <div class="btn-box">
+                <button type="button" id="back2">Back</button>
+                <button type="button" id="next3">Next</button>
+            </div>
+        </form>
+        <form id="form4">
+            <h3>Hobbies and Activites</h3>
+            <input type="text" placeholder="Hobbies" >
+            <input type="text" placeholder="Activites during free time" >
+            <div class="btn-box">
+                <button type="button" id="back3">Back</button>
+                <button type="button" id="submit" onclick="submitfinal()">Submit</button>
+            </div>
+        </form>
+        <div class="steps">
+            <div id="backcol"></div>
+            <div class="step-num"><small>Step 1</small></div>
+            <div class="step-num"><small>Step 2</small></div>
+            <div class="step-num"><small>Step 3</small></div>
+            <div class="step-num"><small>Step 4</small></div>
+        </div>
+    </div>
+    <script src="./form.js"></script>
+</body>
+</html>
